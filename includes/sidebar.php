@@ -6,11 +6,8 @@
         $items = [
             'dashboard' => 'Dashboard',
             'categorias' => 'Categorias',
-            'responsaveis' => 'Responsáveis',
             'contas_pagar' => 'Contas a Pagar',
             'contas_receber' => 'Contas a Receber',
-            'recorrencias' => 'Recorrências',
-            'parcelamentos' => 'Parcelamentos',
             'relatorios' => 'Relatórios',
             'calendario' => 'Calendário',
             'usuarios' => 'Usuários',
