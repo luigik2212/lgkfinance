@@ -93,7 +93,7 @@ $statusList = ['Pendente', 'Recebido', 'Vencido', 'Cancelado'];
 <div class="card">
     <div class="card-header-row">
         <h3>Listagem</h3>
-        <button class="btn-primary" type="button" data-modal-target="modal-conta-receber-create">Adicionar nova conta</button>
+        <button class="btn-primary" type="button" data-modal-target="modal-conta-receber-create">Nova conta a receber</button>
     </div>
     <div class="table-wrap">
         <table>
@@ -119,7 +119,7 @@ $statusList = ['Pendente', 'Recebido', 'Vencido', 'Cancelado'];
 
 <div class="modal" id="modal-conta-receber-create" aria-hidden="true">
     <div class="modal-content modal-lg">
-        <div class="modal-header"><h3>Adicionar nova conta</h3><button class="modal-close" type="button" data-modal-close>&times;</button></div>
+        <div class="modal-header"><h3>Nova conta a receber</h3><button class="modal-close" type="button" data-modal-close>&times;</button></div>
         <form method="post" enctype="multipart/form-data" class="grid-form">
             <input type="hidden" name="action" value="create">
             <input name="descricao" placeholder="Descrição" required>

@@ -8,12 +8,16 @@ const openModal = (modal) => {
   if (!modal) return;
   modal.classList.add('open');
   modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
 };
 
 const closeModal = (modal) => {
   if (!modal) return;
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
+  if (!document.querySelector('.modal.open')) {
+    document.body.classList.remove('modal-open');
+  }
 };
 
 document.querySelectorAll('[data-modal-target]').forEach((button) => {
