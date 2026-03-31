@@ -2,8 +2,8 @@
 $appConfig = require __DIR__ . '/../config/config.php';
 $module = $_GET['module'] ?? 'dashboard';
 $allowedModules = [
-    'dashboard', 'categorias', 'responsaveis', 'contas_pagar', 'contas_receber',
-    'recorrencias', 'parcelamentos', 'relatorios', 'usuarios', 'logs', 'calendario'
+    'dashboard', 'categorias', 'contas_pagar', 'contas_receber',
+    'relatorios', 'usuarios', 'logs', 'calendario'
 ];
 if (!in_array($module, $allowedModules, true)) {
     $module = 'dashboard';
